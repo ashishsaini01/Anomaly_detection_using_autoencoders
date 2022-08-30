@@ -32,7 +32,7 @@ rl_1, rl_2 = threshold_rl(np.sum(edges, axis = 0))
 
 plt.plot(np.sum(edges, axis = 0))
 plt.axvline(rl_1)
-plt.axvline(rl_2 + 300)
+plt.axvline(rl_2)
 
 # function for getting threshold for RR images
 def threshold_rr(values):
@@ -50,7 +50,7 @@ def threshold_left(values):
     l_1 = np.argmin(np.argsort(values[0:100]))  
     l_2 = np.argmax(values[300:-5]) + 300 #[::-1][:5]
     return l_1, l_2
-#     rl_3 = np.argsort(values[])
+
 l_1, l_2 = threshold_left(np.sum(edges, axis = 0))
 
 plt.plot(np.sum(edges, axis = 0))
@@ -62,7 +62,6 @@ def threshold_right(values):
     r_1 = np.argmax(values[0:100])  
     r_2 = np.max(np.argsort(values[250:])) + 250 #[::-1][:5]
     return r_1, r_2
-#     rl_3 = np.argsort(values[])
 
 r_1, r_2 = threshold_right(np.sum(edges, axis = 0))
 
