@@ -45,5 +45,6 @@ The work involved close collaboration with PhD students on research topics relat
 
 ---
 
-
+📚 Acknowledgements
+This work was conducted as part of my assistantship under the Chair of Data Science and Data Engineering (LS-9) at TU Dortmund University, collaborating with PhD researchers focused on logistics and AI applications.
 
